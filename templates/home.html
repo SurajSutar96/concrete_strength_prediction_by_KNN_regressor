@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<center>
+<body>
+    <h1>Concrete Strength</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+        <label>Cement</label>
+    	  <input type="text" name="Cement" placeholder="Cement" required="required" />
+        <br><br>
+        <label>Blast Furnace Slag</label>
+    	  <input type="text" name="Blast Furnace Slag" placeholder="Blast Furnace Slag" required="required" />
+        <br><br>
+        <label>Fly Ash</label>
+    	  <input type="text" name="Fly Ash" placeholder="Fly Ash" required="required" />
+        <br><br>
+        <label>Water</label>
+    	  <input type="text" name="Water" placeholder="Water" required="required" />
+        <br><br>
+        <label>Superplasticizer</label>
+    	  <input type="text" name="Superplasticizer" placeholder="Superplasticizer" required="required" />
+        <br><br>
+        <label>Coarse Aggregate</label>
+    	  <input type="text" name="Coarse Aggregate" placeholder="Coarse Aggregate" required="required" />
+        <br><br>
+        <label>Fine Aggregate</label>
+    	  <input type="text" name="Fine Aggregate" placeholder="Fine Aggregate" required="required" />
+        <br><br>
+        <label>Age</label>
+    	  <input type="text" name="Age" placeholder="Age" required="required" />
+        <br><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br><br>
+   {{ predictions }}
+</body>
+</center>
+</html>
